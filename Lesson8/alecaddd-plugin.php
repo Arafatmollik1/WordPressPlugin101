@@ -55,7 +55,7 @@ if ( !class_exists( 'AlecadddPlugin' ) ) {
 			wp_enqueue_script( 'mypluginscript', plugins_url( '/assets/myscript.js', __FILE__ ) );
 		}
 
-		function activate() {
+		function activate() { //this is to activate the plugin
 			require_once plugin_dir_path( __FILE__ ) . 'inc/alecaddd-plugin-activate.php';
 			AlecadddPluginActivate::activate();
 		}
